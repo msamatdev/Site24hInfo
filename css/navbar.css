@@ -7,7 +7,7 @@
     background-color: var(--primary);
     padding: 10px 30px;
     display: flex;
-    justify-items: center;
-    align-items: space-between;
+    justify-content: space-between;
+    align-items: center;
 }
 
