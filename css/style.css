@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+:root {
+    --primary: rgb(24, 201, 214);
+    --secondary: rgb(21, 144, 214);
+    --borders: rgb(56, 64, 69);
+}
