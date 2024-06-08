@@ -1,0 +1,203 @@
+#top {
+    margin-top: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 111px);
+    gap: 48px;
+    max-width: 920px;
+    padding: 10px;
+}
+
+#top > div > p {
+    font-family: 'Poppins';
+    text-align: center;
+    color: transparent;
+    transition: color 1.25s ease-in-out;
+}
+
+#top > img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 6px solid black;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#top > div > p:first-child {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#top > div > p:last-child {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#history > * {
+    background-color: black;
+}
+
+#historyTopPoly, #historyBottomPoly {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    content: '';
+    display: block;
+}
+
+#historyTopPoly {
+    margin-top: 40px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+#historyContent {
+    color: white;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#historyContent p {
+    font-family: 'Poppins';
+}
+
+#historyContent > p {
+    margin-bottom: 60px;
+    font-family: 'PoetsenOne';
+    font-size: 42px;
+}
+
+#historyContent > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-bottom: 30px;
+}
+
+#historyContent > div > * {
+    width: 500px;
+}
+
+#historyText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 19px;
+}
+
+#historyText > p {
+    max-width: 500px;
+}
+
+#historyBottomPoly {
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+#historyContent img {
+    border-radius: 30px;
+}
+
+#thisYear {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 20px 24px !important;
+}
+
+#thisYear > p {
+    font-family: 'PoetsenOne';
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#thisYear > div {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+#thisYear > div:last-child {
+    margin-bottom: 60px;
+}
+
+.text {
+    margin-top: 14px;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+#numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: black;
+    border-radius: 20px;
+    border: solid 14px black;
+}
+
+#numbers > div {
+    width: 300px;
+    padding: 10px 4px;
+}
+
+#numbers p {
+    color: white;
+    text-align: center;
+    
+}
+
+#numbers > div > p:first-child{
+    font-family: 'PoetsenOne';
+    font-size: 28px;
+}
+
+#numbers > div > p:last-child {
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+#numbers > div:not(:last-child) {
+    border-right: 2px solid white;
+}
+
+@media screen and (max-width: 970px) {
+    #numbers {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #numbers > div:not(:last-child) {
+        border-right: none;
+        border-bottom: 2px solid white;
+    }
+
+    #numbers > div {
+        width: 94%;
+    }
+}
