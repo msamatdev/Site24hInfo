@@ -17,10 +17,10 @@ body {
 
 @font-face {
     font-family: 'PoetsenOne';
-    src: url("/fonts/PoetsenOne-Regular.ttf");
+    src: url("../fonts/PoetsenOne-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url("/fonts/Poppins-Regular.ttf");
+    src: url("../fonts/Poppins-Regular.ttf");
 }
