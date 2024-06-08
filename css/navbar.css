@@ -3,11 +3,49 @@
     top: 0;
     right: 0;
     width: 100%;
+    height: 12vh;
     z-index: 100;
     background-color: var(--primary);
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Poppins';
 }
 
+#logo {
+    display: inline-block;
+}
+
+#logo img {
+    width: 25%;
+}
+
+#logo .title {
+    font-family: 'PoetsenOne';
+    font-size: 40px;
+    display: inline-block;
+    border: 1px solid black;
+} 
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 28.5px;
+    font-size: 30px;
+}
+
+.active {
+    text-shadow: 5px -3px 2px rgba(255, 0, 0, 0.58);
+}
+
+.lang {
+    border: 1px solid black;
+    width: 105px;
+    height: 95px;
+    font-weight: bold;
+}
+
+.fr, .en {
+    padding: 10px;
+}
