@@ -1,0 +1,102 @@
+#top {
+    margin-top: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(20vh - 111px);
+    gap: 48px;
+    max-width: 920px;
+    padding: 10px;
+}
+
+
+#top > p{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#content {
+    display: grid;
+}
+
+#content > #top > p {
+    font-family: 'PoetsenOne';
+}
+
+#content > #top > .desc > p {
+    font-family: 'Poppins';
+    margin-top: 20px;
+    text-align: center;
+}
+
+#content > #top > .desc > img {
+    width: 50%;
+    height: 275px;
+    object-fit: cover;
+    object-position: 100% 90%;
+}
+
+
+#topPoly, #bottomPoly {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    content: '';
+    display: block;
+}
+
+#topPoly {
+    margin-top: 40px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+#ourTeams {
+    background-color: black;
+    color: white;
+}
+
+#ourTeams > p {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'PoetsenOne';
+}
+
+#ourTeams > .team {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 200px 50px 200px;
+}
+
+#ourTeams > .team > div > p {
+    font-family: 'Poppins';
+    max-width: 800px;
+    margin: 10px;
+}
+
+#ourTeams > .team > div > p:first-child {
+    font-family: 'PoetsenOne';
+    font-size: 25px;
+    width: 800px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+#ourTeams > .team > img {
+    height: 500px;
+}
+
+
+#bottomPoly {
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+#others > p {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 20px;
+}

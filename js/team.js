@@ -14,4 +14,4 @@ setTimeout(() => {
         top: window.innerHeight,
         behavior: "smooth"
     });
-}, 2000);
+}, 2500);
