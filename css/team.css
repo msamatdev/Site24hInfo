@@ -29,8 +29,10 @@
 
 #cards {
     display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 100px;
     height: 100vh;
     font-family: 'Poppins';
