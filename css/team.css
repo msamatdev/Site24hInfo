@@ -1,0 +1,62 @@
+#top {
+    margin-top: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(90vh - 111px);
+    gap: 48px;
+    max-width: 920px;
+    padding: 10px;
+}
+
+#top>div>p {
+    font-family: 'Poppins';
+    text-align: center;
+    color: transparent;
+    transition: color 1.25s ease-in-out;
+}
+
+#top > div > p:first-child {
+    font-size: 30px;
+}
+
+#top > div > p:last-child {
+    font-size: 20px;
+}
+
+#cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px;
+    height: 100vh;
+    font-family: 'Poppins';
+}
+
+#cards > .card {
+    border: 1px solid var(--borders);
+    background-color: rgb(52, 52, 255);
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.541);
+}
+
+#cards > .card > .name {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#cards > .card > .role {
+    text-align: center;
+}
+
+#cards > .card > .desc {
+    margin: 20px;
+    font-size: 15px;
+}
