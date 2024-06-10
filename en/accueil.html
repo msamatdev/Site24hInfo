@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/accueil.css">
     <script src="../js/index.js" defer></script>
     <script src="../js/accueil.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
 </head>
 
 <body>
@@ -19,15 +20,28 @@
             <img src="../media/logo.png" alt="Logo 24h info">
         </div>
 
-        <nav>
+        <div>
+            <nav>
+                <a class="accueil active" href="accueil.html">Home</a>
+                <a class="deroulement" href="deroulement.html">Event sequence</a>
+                <a class="team" href="team.html">Our team</a>
+            </nav>
+            <button class="menuButton">+</button>
+            <div>
+                <button id="lang" class="lang">🇬🇧</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="pagesMenu">
+        <div>
+            <p>24h de l'info</p>
+            <button class="menuButton">X</button>    
+        </div>
+        <div>
             <a class="accueil active" href="accueil.html">Home</a>
             <a class="deroulement" href="deroulement.html">Event sequence</a>
             <a class="team" href="team.html">Our team</a>
-        </nav>
-
-        <div class="lang">
-            <div class="fr">FR</div>
-            <div class="en active">EN</div>
         </div>
     </div>
 

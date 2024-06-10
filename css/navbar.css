@@ -3,7 +3,6 @@
     top: 0;
     right: 0;
     width: 100%;
-    height: 12vh;
     z-index: 100;
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -14,35 +13,106 @@
     font-family: 'Poppins';
 }
 
+#navbar > div:last-child > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#navbar > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28.5px;
+}
+
 #logo img {
     
-    width: 22%;
+    width: 180px;
+}
+
+#navbar .menuButton {
+    display: none;
+}
+
+.menuButton {
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    color: black;
+}
+
+#lang {
+    background-color: transparent;
+    border: black 1px solid;
+    border-radius: 4px;
+    font-size: 24px;
+    padding: 0 4px;
 }
 
 a {
     text-decoration: none;
-    color: var(--greyedOut);
-    margin: 28.5px;
-    font-size: 20px;
+    color: rgb(140,140,140);
 }
 
 .active {
     color: black;
-    text-decoration: underline;
 }
 
-.lang {
-    border: 1px solid black;
-    width: 90px;
-    height: 90px;
-    font-weight: bold;
+#pagesMenu {
+    display: flex;
+    padding: 0 60px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 600px;
+    height: 100vh;
+    position: absolute;
+    z-index: 200;
+    border-left: 4px solid black;
+    right: -350px;
+    top: 0;
+    background-color: white;
+    transition: right 300ms ease-in-out;
 }
 
-.fr {
-    padding: 10px;
+#pagesMenu > div:first-child {
+    margin-top: 100px;
+    font-size: 28px;
+    font-family: 'PoetsenOne';
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
 }
 
-.en {
-    padding: 10px;
-    margin-left: 40px;
+#pagesMenu > div:last-child {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+#pagesMenu a {
+    font-family: 'Poppins';
+    font-size: 24px;
+}
+
+@media screen and (max-width: 747px) {
+    #navbar .menuButton {
+        display: block !important;
+    }
+
+    #navbar > div:last-child > nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 748px) {
+    #pagesMenu {
+        display: none;
+    }
 }
