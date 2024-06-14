@@ -39,6 +39,10 @@
     font-weight: 600;
 }
 
+#history {
+    max-width: 100%;
+}
+
 #history > * {
     background-color: black;
 }
@@ -46,7 +50,7 @@
 #historyTopPoly, #historyBottomPoly {
     background-color: black;
     height: 100px;
-    width: 100%;
+    max-width: 100%;
     content: '';
     display: block;
 }
@@ -80,12 +84,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 100px;
     margin-bottom: 30px;
 }
 
 #historyContent > div > * {
-    width: 500px;
+    max-width: 500px;
 }
 
 #historyText {
@@ -105,6 +109,7 @@
 
 #historyContent img {
     border-radius: 30px;
+    max-width: 450px;
 }
 
 #thisYear {

@@ -28,7 +28,6 @@
 }
 
 #logo img {
-    
     width: 180px;
 }
 
@@ -61,6 +60,7 @@ a {
 }
 
 #pagesMenu {
+    position: fixed;
     display: flex;
     padding: 0 60px;
     flex-direction: column;
@@ -68,13 +68,13 @@ a {
     align-items: center;
     max-width: 600px;
     height: 100vh;
-    position: absolute;
     z-index: 200;
     border-left: 4px solid black;
     right: -350px;
     top: 0;
     background-color: white;
     transition: right 300ms ease-in-out;
+    overflow: hidden;
 }
 
 #pagesMenu > div:first-child {
@@ -101,8 +101,23 @@ a {
     font-size: 24px;
 }
 
+.lang {
+    cursor: pointer;
+}
+
 .lang img {
     height: 24px;
+}
+
+.menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menuButton img {
+    height: 28px; 
 }
 
 @media screen and (max-width: 747px) {
